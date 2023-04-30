@@ -7,6 +7,7 @@ public class Main {
         try {
             TcpNioClient client = new TcpNioClient();
             client.begin();
+            client.waitForCommand();
 
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);

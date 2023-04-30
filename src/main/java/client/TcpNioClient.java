@@ -1,14 +1,12 @@
 package client;
 
 import com.racerssquad.besthack2023.DTO.proto.ExchangeInfoMessage;
-import com.racerssquad.besthack2023.DTO.proto.Header;
 import com.racerssquad.besthack2023.DTO.proto.MessageEnumsProto;
-import com.racerssquad.besthack2023.DTO.proto.Request;
 
 import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.SocketChannel;
+
+import static com.racerssquad.besthack2023.DTO.proto.MessageEnumsProto.CommandType.ctExecCommand;
+import static com.racerssquad.besthack2023.DTO.proto.MessageEnumsProto.CommandType.ctStatus;
 
 public class TcpNioClient {
 
@@ -32,7 +30,7 @@ public class TcpNioClient {
     public void begin() throws IOException, ClassNotFoundException {
         connection.send(generator.getHandShakeRequest());
         ExchangeInfoMessage receivedMessage = connection.receive();
-        if (receivedMessage.getResponse().getAnswerTypeValue() == 1){
+        if (receivedMessage.getResponse().getAnswerType() == MessageEnumsProto.AnswerType.atAnswerOK){
             System.out.println("Handshake privEEEEt");
             waitForCommand();
         } else {
@@ -40,19 +38,27 @@ public class TcpNioClient {
         }
     }
 
+    private void createThread(ExchangeInfoMessage receivedMessage) {
+//        if (users.get(receivedMessage.getHeader().getMessageNum()))
+        if (commandThread != null){
+            commandThread.interrupt();
+        }
+        commandThread = new Thread(new CommandExecutor(receivedMessage.getHeader().getSender(), generator.getIdByAlias(receivedMessage), generator, connection));
+        commandThread.start();
+    }
+
     public void waitForCommand(){
         while (true){
             ExchangeInfoMessage receivedMessage;
             try {
                 receivedMessage = connection.receive();
-                if (receivedMessage.getRequest().getCommandValue() == 1){
+                if (receivedMessage.getRequest().getCommand() == ctStatus){
                     connection.send(generator.generateResponse(receivedMessage));
-                } else if (receivedMessage.getRequest().getCommandValue() == 2){
-                    if (commandThread != null){
-                        commandThread.interrupt();
+                    if (generator.getMode() == 1) {
+                        createThread(receivedMessage);
                     }
-                    commandThread = new Thread(new CommandExecutor(receivedMessage.getHeader().getSender(), generator.getIdByAlias(receivedMessage), generator, connection));
-                    commandThread.start();
+                } else if (receivedMessage.getRequest().getCommand() == ctExecCommand){
+                    createThread(receivedMessage);
                 }
             } catch (ClassNotFoundException exception){
                 continue;

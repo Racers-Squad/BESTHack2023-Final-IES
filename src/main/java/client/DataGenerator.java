@@ -1,12 +1,13 @@
 package client;
 
-import java.nio.ByteBuffer;
-import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.Collectors;
-
 import com.github.javafaker.Faker;
 import com.racerssquad.besthack2023.DTO.proto.*;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class DataGenerator {
 
@@ -195,6 +196,10 @@ public class DataGenerator {
                 .setAnswerType(MessageEnumsProto.AnswerType.atAnswerOK)
                 .setCommand(MessageEnumsProto.CommandType.ctExecCommand)
                 .build();
+    }
+
+    public int getMode() {
+        return mode;
     }
 
     static class SendValues {
