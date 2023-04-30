@@ -33,6 +33,7 @@ public class TcpNioClient {
         connection.send(generator.getHandShakeRequest());
         ExchangeInfoMessage receivedMessage = connection.receive();
         if (receivedMessage.getResponse().getAnswerTypeValue() == 1){
+            System.out.println("Handshake privEEEEt");
             waitForCommand();
         } else {
             connection.close();
@@ -50,7 +51,7 @@ public class TcpNioClient {
                     if (commandThread != null){
                         commandThread.interrupt();
                     }
-                    commandThread= new Thread(new CommandExecutor(receivedMessage.getHeader().getSender(), generator.getIdByAlias(receivedMessage), generator, connection));
+                    commandThread = new Thread(new CommandExecutor(receivedMessage.getHeader().getSender(), generator.getIdByAlias(receivedMessage), generator, connection));
                     commandThread.start();
                 }
             } catch (ClassNotFoundException exception){
