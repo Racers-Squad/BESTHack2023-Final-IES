@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecf4e2b4-3750-4980-8ec6-3ed729c5e2f1" name="Changes" comment="Initail commit with protofiles generated">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/protoeditor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ClientServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/CommandExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/DataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoDataOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoDataProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoFieldRef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoFieldRefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoFieldRefProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/AdvInfoProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/DataFieldValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/DataFieldValueOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/DataFieldValueProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/DataRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/DataRowOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/DataRowProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/EventOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/EventProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ExchangeInfoMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ExchangeInfoMessageOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ExchangeInfoMessageProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/HeaderOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/HeaderProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/MessageEnumsProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/OwnCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/OwnCommandOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/OwnCommandProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/Parameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ParameterOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ParameterProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/RequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/RequestProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ResponseProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/StatusOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/StatusProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ValueRef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ValueRefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/racerssquad/besthack2023/DTO/proto/ValueRefProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/TcpNioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/TcpNioClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/DataRow.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/DataRow.proto" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2P6Ype4c74m8hIPFK0GB9jkHUEN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/IdeaProjects/client/src/main/java/generated",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2425",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\client\src\main\java\generated" />
+      <recent name="E:\IdeaProjects\client" />
+      <recent name="E:\IdeaProjects\client\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\client\src\main\proto" />
+      <recent name="E:\IdeaProjects\client" />
+      <recent name="E:\IdeaProjects\client\src\main" />
+      <recent name="E:\IdeaProjects\client\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecf4e2b4-3750-4980-8ec6-3ed729c5e2f1" name="Changes" comment="" />
+      <created>1682779184762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682779184762</updated>
+      <workItem from="1682779185755" duration="24940000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initail commit with protofiles generated">
+      <created>1682781373396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682781373396</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initail commit with protofiles generated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initail commit with protofiles generated" />
+  </component>
+</project>

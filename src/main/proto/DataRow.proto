@@ -1,12 +1,11 @@
-/* DataRow.proto */
-
 syntax = "proto3";
-import "ValueRef.proto";
 
-package com.racerssquad.besthack2023.DTO.proto;
-option java_multiple_files = true;
+import "DataFieldValue.proto";
+
+package ru.sovcombank.hackaton.proto;
+option java_multiple_files  = true;
 option java_outer_classname = "DataRowProto";
-option optimize_for = SPEED;
+option optimize_for         = SPEED;
 
 /**
   Тип данных строки для типа AdvInfoData.
@@ -17,7 +16,7 @@ option optimize_for = SPEED;
 */
 
 message DataRow {
-  string    rowIdent        = 1;  // Идентификатор записи
-  bool      incrementDelete = 2;  // Инкрементальное удаление записи (Удаление записи при инкрементальной передаче данных)
-  repeated  ValueRef values = 3;  // Описание значения поля
-};
+  string    rowIdent                = 1;  // Идентификатор записи
+  bool      incrementDelete         = 2;  // Инкрементальное удаление записи (Удаление записи при инкрементальной передаче данных)
+  repeated  DataFieldValue  values  = 3;  // Описание поля с установкой значения поля
+}
